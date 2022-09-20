@@ -13,7 +13,10 @@ let scoreBox = document.querySelector(".num");
 let score = 0;
 let userVal = 0;
 
+window.localStorage.setItem("score", 0);
+
 document.onload = loadScore();
+
 function loadScore() {
   scoreBox.innerHTML = localStorage.getItem("score");
   score = localStorage.getItem("score");
