@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Rock, Paper, Scissors Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header start -->
+      <div class="header">
+        <h1>Rock Paper Scissors</h1>
+        <div class="scoreBox">
+          <span class="text">Score</span>
+          <span class="num"></span>
+        </div>
+      </div>
+      <!-- header end -->
+      <div class="playBox">
+        <!-- choose start -->
+        <div class="choose active">
+          <div class="grid">
+            <div data-value="paper" class="hand paper">
+              <div class="image">
+                <img src="./imgs/icon-paper.svg" alt="" />
+              </div>
+            </div>
+            <div data-value="scissors" class="hand scissors">
+              <div class="image">
+                <img src="./imgs/icon-scissors.svg" alt="" />
+              </div>
+            </div>
+            <div data-value="rock" class="hand rock">
+              <div class="image">
+                <img src="./imgs/icon-rock.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- choose end -->
+
+        <!-- Picked start -->
+        <div class="picked">
+          <div class="user">
+            <span>You Picked</span>
+            <div>
+              <div class="image">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="result">
+            <h1></h1>
+            <a class="again">Play Again</a>
+          </div>
+          <div class="computer">
+            <span>The house picked</span>
+            <div>
+              <div class="image">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Picked end -->
+      </div>
+      <div class="resetBtn">
+        <span>Reset</span>
+      </div>
+      <div class="rulesBtn">
+        <span>Rules</span>
+      </div>
+      <div class="rulesBox">
+        <div class="content">
+          <div class="topp">
+            <h1>Rules</h1>
+            <span class="close"
+              ><img src="./imgs/icon-close.svg" alt=""
+            /></span>
+          </div>
+          <div class="image">
+            <img src="./imgs/image-rules.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
